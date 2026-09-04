@@ -10,7 +10,7 @@ const journal = [
 ];
 
 export default function ExperiencesPage() {
-  return <section className="page">
+  return <section className="page experiences-page">
     <p className="kicker">GLOBAL EXPERIENCES</p>
     <h1>Different places.<br />Lasting connections.</h1>
     <p className="page-intro">Three experiences that changed how I think about community, technology, and responsible engagement.</p>
