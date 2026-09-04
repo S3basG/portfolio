@@ -72,7 +72,7 @@ export const skills = [
     r: 'I left more willing to take chances in technical spaces and more interested in learning through practical projects.',
   },
   {
-    name: 'Global and Cultural Engagement',
+    name: 'Global & Cultural Engagement',
     context: 'Culture and travel',
     s: 'I attended traditions, performances, and sporting events in places where I did not understand every custom.',
     t: 'I wanted to enjoy those experiences while respecting that I was still a visitor and had more to learn.',

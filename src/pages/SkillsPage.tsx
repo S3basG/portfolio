@@ -12,7 +12,7 @@ export default function SkillsPage() {
           <div><dt>Situation</dt><dd>{skill.s}</dd></div>
           <div><dt>Task</dt><dd>{skill.t}</dd></div>
           <div><dt>Action</dt><dd>{skill.a}</dd></div>
-          <div><dt>Result</dt><dd>{skill.r}</dd></div>
+          <div><dt>Resolution</dt><dd>{skill.r}</dd></div>
         </dl>
       </article>)}
     </div>
