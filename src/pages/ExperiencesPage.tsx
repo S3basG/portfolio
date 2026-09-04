@@ -12,8 +12,8 @@ const journal = [
 export default function ExperiencesPage() {
   return <section className="page experiences-page">
     <p className="kicker">GLOBAL EXPERIENCES</p>
-    <h1>Different places.<br />Lasting connections.</h1>
-    <p className="page-intro">Three experiences that changed how I think about community, technology, and responsible engagement.</p>
+    <h1>The experiences I<br />keep coming back to.</h1>
+    <p className="page-intro">These are the people and moments that shaped my time abroad and changed what I want to do next.</p>
     <div className="experience-list">
       {experiences.map((experience) => <article id={experience.slug} className="experience-story" key={experience.slug}>
         <div className="experience-number">{experience.number}</div>
@@ -31,8 +31,8 @@ export default function ExperiencesPage() {
     </div>
     <section className="travel-journal" aria-labelledby="travel-journal-title">
       <p className="kicker">PHOTO JOURNAL</p>
-      <h2 id="travel-journal-title">Learning in motion.</h2>
-      <p>Travel across Europe and Morocco made curiosity a daily practice. These moments remind me that global learning happens through places, conversations, and the relationships built along the way.</p>
+      <h2 id="travel-journal-title">A few more memories.</h2>
+      <p>I visited places I had only seen in pictures, but the best part of traveling was sharing those moments with other people.</p>
       <div className="journal-grid">
         {journal.map(([file, alt, caption]) => <figure key={file}><img src={asset('isp/' + file)} alt={alt} loading="lazy" /><figcaption>{caption}</figcaption></figure>)}
       </div>
