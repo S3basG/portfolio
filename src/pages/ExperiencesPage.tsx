@@ -1,4 +1,5 @@
 import { experiences } from '../data/ispContent';
+import { asset } from '../data/assets';
 
 const journal = [
   ['city-square.jpg', 'Sebastian visiting a city square in Spain', 'Listening and learning in Spain'],
@@ -23,8 +24,8 @@ export default function ExperiencesPage() {
         </div>
         <div className="story-media">
           {experience.photos.length
-            ? experience.photos.map(([file, alt, caption]) => <figure key={file}><img src={'/isp/' + file} alt={alt} loading="lazy" /><figcaption>{caption}</figcaption></figure>)
-            : <figure><img src="/isp/waterfront-portrait.jpg" alt="Sebastian standing beside the water in Lisbon" loading="lazy" /><figcaption>Lisbon, Portugal</figcaption></figure>}
+            ? experience.photos.map(([file, alt, caption]) => <figure key={file}><img src={asset('isp/' + file)} alt={alt} loading="lazy" /><figcaption>{caption}</figcaption></figure>)
+            : <figure><img src={asset('isp/waterfront-portrait.jpg')} alt="Sebastian standing beside the water in Lisbon" loading="lazy" /><figcaption>Lisbon, Portugal</figcaption></figure>}
         </div>
       </article>)}
     </div>
@@ -33,8 +34,9 @@ export default function ExperiencesPage() {
       <h2 id="travel-journal-title">Learning in motion.</h2>
       <p>Travel across Europe and Morocco made curiosity a daily practice. These moments remind me that global learning happens through places, conversations, and the relationships built along the way.</p>
       <div className="journal-grid">
-        {journal.map(([file, alt, caption]) => <figure key={file}><img src={'/isp/' + file} alt={alt} loading="lazy" /><figcaption>{caption}</figcaption></figure>)}
+        {journal.map(([file, alt, caption]) => <figure key={file}><img src={asset('isp/' + file)} alt={alt} loading="lazy" /><figcaption>{caption}</figcaption></figure>)}
       </div>
     </section>
   </section>;
 }
+
