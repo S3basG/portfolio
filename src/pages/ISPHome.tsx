@@ -33,7 +33,7 @@ export default function ISPHome() {
     <section className="home-paths">
       {pillars.map(([number, title, description, goal, id]) => <article key={title}>
         <span>{number}</span><h2>{title}</h2><p>{description}</p><p className="pillar-goal">{goal}</p>
-        <Link to={'/experiences#' + id}>Read more →</Link>
+        <Link to={'/experiences?focus=' + id}>Read more →</Link>
       </article>)}
     </section>
   </>;

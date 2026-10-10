@@ -12,10 +12,15 @@ const links = [
 
 export default function SiteLayout() {
   const [open, setOpen] = useState(false);
-  const { pathname } = useLocation();
+  const { pathname, search } = useLocation();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'auto' });
+    const focus = new URLSearchParams(search).get('focus');
+    if (focus) {
+      requestAnimationFrame(() => document.getElementById(focus)?.scrollIntoView({ block: 'start' }));
+    } else {
+      window.scrollTo({ top: 0, behavior: 'auto' });
+    }
     const selector = [
       '.home-hero', '.home-statement', '.home-paths article', '.page-two > div',
       '.experience-story', '.travel-journal', '.skill-card', '.role-list article',
@@ -36,7 +41,7 @@ export default function SiteLayout() {
     }, { threshold: 0.08, rootMargin: '0px 0px -45px' });
     elements.forEach((element) => observer.observe(element));
     return () => observer.disconnect();
-  }, [pathname]);
+  }, [pathname, search]);
 
   return <div className="site-shell">
     <a className="skip" href="#content">Skip to content</a>
