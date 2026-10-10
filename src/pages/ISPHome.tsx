@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import { asset } from '../data/assets';
 
-const paths = [
-  ['01', 'Community', 'The friends I made through volleyball became one of the best parts of being abroad.', 'volleyball'],
-  ['02', 'Technology', 'ETHLisbon gave me a chance to experience engineering in a completely new setting.', 'ethlisbon'],
-  ['03', 'Culture', 'Travel taught me to ask questions, pay attention, and stay open to how other people live.', 'culture'],
+const pillars = [
+  ['01', 'Belonging', 'People learn and contribute more freely when they know there is room to ask questions, make mistakes, and be themselves.', 'My goal is to create technology spaces where a first-time learner feels welcome enough to keep going.', 'volleyball'],
+  ['02', 'Learning by building', 'The most useful technical growth happens when an idea is tested, measured, and improved through practice.', 'My goal is to make engineering and AI understandable through projects that connect to real needs.', 'ethlisbon'],
+  ['03', 'Listening first', 'Language and cultural knowledge can open a door, but meaningful work starts by listening to the people closest to a challenge.', 'My goal is to build with communities in Bolivia, not simply design solutions for them.', 'identity'],
 ];
 
 export default function ISPHome() {
@@ -25,9 +25,14 @@ export default function ISPHome() {
       </figure>
     </section>
     <section className="home-statement"><p>I want to use computer engineering to make technology and artificial intelligence easier to understand in Bolivia.</p></section>
+    <section className="home-values-intro" aria-labelledby="values-title">
+      <p className="kicker">THE VALUES BEHIND MY GOAL</p>
+      <h2 id="values-title">Three principles guide what I want to build next.</h2>
+      <p>The International Scholars Program helped me connect the way I learn, lead, and serve. These values turn that reflection into a direction for my work.</p>
+    </section>
     <section className="home-paths">
-      {paths.map(([number, title, description, id]) => <article key={title}>
-        <span>{number}</span><h2>{title}</h2><p>{description}</p>
+      {pillars.map(([number, title, description, goal, id]) => <article key={title}>
+        <span>{number}</span><h2>{title}</h2><p>{description}</p><p className="pillar-goal">{goal}</p>
         <Link to={'/experiences#' + id}>Read more →</Link>
       </article>)}
     </section>

@@ -10,7 +10,7 @@ export default function ReflectionPage() {
       <figcaption>Thinking about what comes next</figcaption>
     </figure>
     <div className="reflection-copy">
-      <p className="lead">Going abroad changed how I think about community, engineering, and what it really means to give back.</p>
+      <p className="lead">The International Scholars Program helped me see that global learning is not one trip. It is a way of connecting engineering, language, leadership, and service.</p>
       {finalReflection.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
     </div>
   </section>;
