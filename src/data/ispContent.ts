@@ -5,8 +5,8 @@ export const experiences = [
     label: 'COMMUNITY · VOLLEYBALL',
     title: 'Finding belonging through a shared routine.',
     photos: [
-      ['isp/volleyball-community.jpg', 'A group posing together on an outdoor volleyball court', 'The group I found through volleyball'],
-      ['isp/community-picnic.jpg', 'A group sharing a picnic on the grass', 'Spending time together outside the court'],
+      ['isp/volleyball-community.jpg', 'A group posing together on an outdoor volleyball court', 'The group I found through volleyball', 'center 62%'],
+      ['isp/community-picnic.jpg', 'A group sharing a picnic on the grass', 'Spending time together outside the court', 'center 58%'],
     ],
     paragraphs: [
       `When I began playing volleyball abroad, I expected it to be a familiar activity in an unfamiliar place. Instead, it became the first community where I felt that I belonged. The court gave people from different countries, personalities, and experience levels an easy reason to talk. We could serve, pass, laugh at a mistake, and slowly become comfortable with one another without needing a perfect introduction.`,
@@ -21,8 +21,8 @@ export const experiences = [
     label: 'SPAIN & PORTUGAL · COURSEWORK AND ETHLISBON',
     title: 'Learning engineering in a new context.',
     photos: [
-      ['isp/waterfront-portrait.jpg', 'Sebastian standing beside the water in Lisbon', 'Lisbon, Portugal'],
-      ['isp/city-square.jpg', 'Sebastian visiting a city square in Spain', 'Learning beyond a familiar campus'],
+      ['isp/waterfront-portrait.jpg', 'Sebastian standing beside the water in Lisbon', 'Lisbon, Portugal', 'center 67%'],
+      ['isp/city-square.jpg', 'Sebastian visiting a city square in Spain', 'Learning beyond a familiar campus', 'center 72%'],
     ],
     paragraphs: [
       `Studying Engineering Economy, Circuits, Engineering Statistics, and Linear Algebra at Universidad Pontificia Comillas made academics part of my global experience. The subjects connected to my Computer Engineering degree at UF, but the classroom expectations, teaching styles, and examples were different. I had to ask questions sooner, compare new approaches with what I already knew, and become comfortable learning before I felt fully settled.`,
@@ -37,8 +37,8 @@ export const experiences = [
     label: 'BILINGUAL IDENTITY · CULTURE AND TRAVEL',
     title: 'Living between languages, not simply translating.',
     photos: [
-      ['isp/live-performance.jpg', 'Dancers and musicians performing on a stage', 'Learning through performance and cultural programming'],
-      ['isp/football-stadium.jpg', 'A selfie from the stands at a football stadium', 'Experiencing football in Madrid'],
+      ['isp/live-performance.jpg', 'Dancers and musicians performing on a stage', 'Learning through performance and cultural programming', 'center 64%'],
+      ['isp/football-stadium.jpg', 'A selfie from the stands at a football stadium', 'Experiencing football in Madrid', 'center bottom'],
     ],
     paragraphs: [
       `I grew up bilingual in the United States, where moving between English and Spanish is part of how I connect with family, school, and professional communities. Studying in Spain made me examine that identity more closely. Speaking Spanish helped me begin conversations, but it did not mean that I automatically understood every expression, custom, or point of view. The same language carried different rhythms and assumptions depending on who was using it.`,
@@ -53,7 +53,7 @@ export const experiences = [
     label: 'UF · SHPE AND COLORSTACK',
     title: 'Turning global awareness into campus leadership.',
     photos: [
-      ['SebastianGarcia.jpeg', 'A professional portrait of Sebastian Garcia', 'Sebastian Garcia · University of Florida'],
+      ['SebastianGarcia.jpeg', 'A professional portrait of Sebastian Garcia', 'Sebastian Garcia · University of Florida', 'center top'],
     ],
     paragraphs: [
       `My global learning also happens on campus. Through the Society of Hispanic Professional Engineers, I advise Computer Engineering students on courses, internships, and technical interviews. As an Event Director, I help turn broad goals such as professional development and community into programs that students can actually attend and use. This work keeps me connected to the questions students ask when they are trying to find their place in engineering.`,

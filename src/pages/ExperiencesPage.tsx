@@ -2,11 +2,36 @@ import { experiences } from '../data/ispContent';
 import { asset } from '../data/assets';
 
 const journal = [
-  ['city-square.jpg', 'Sebastian visiting a city square in Spain', 'Listening and learning in Spain'],
-  ['paris-portrait.jpg', 'Sebastian in front of the Eiffel Tower', 'Paris, France'],
-  ['cave-visit.jpg', 'An illuminated cave visited during travel', 'Exploring beyond the classroom'],
-  ['time-with-friends.jpg', 'Friends spending time together abroad', 'Friendships across cultures'],
-  ['viewpoint-with-friend.jpg', 'Sebastian and a friend at a mountain viewpoint', 'Shared experiences, lasting connections'],
+  {
+    file: 'family-park-selfie.jpg',
+    alt: 'Sebastian taking a selfie with a family member beside a river and park',
+    caption: 'Sharing the experience with family',
+    position: 'center 42%',
+  },
+  {
+    file: 'cave-portrait.jpg',
+    alt: 'Sebastian standing inside an illuminated cave',
+    caption: 'Exploring beyond the classroom',
+    position: 'center 42%',
+  },
+  {
+    file: 'family-window.jpg',
+    alt: 'A family member beside an open window during travel',
+    caption: 'A family visit abroad',
+    position: 'center 38%',
+  },
+  {
+    file: 'paris-portrait.jpg',
+    alt: 'Sebastian in front of the Eiffel Tower',
+    caption: 'Paris, France',
+    position: 'center 32%',
+  },
+  {
+    file: 'time-with-friends.jpg',
+    alt: 'Friends spending time together abroad',
+    caption: 'Friendships across cultures',
+    position: 'center',
+  },
 ];
 
 export default function ExperiencesPage() {
@@ -24,7 +49,7 @@ export default function ExperiencesPage() {
         </div>
         <div className="story-media">
           {experience.photos.length
-            ? experience.photos.map(([file, alt, caption]) => <figure key={file}><img src={asset(file)} alt={alt} loading="lazy" /><figcaption>{caption}</figcaption></figure>)
+            ? experience.photos.map(([file, alt, caption, position]) => <figure key={file}><img src={asset(file)} alt={alt} loading="lazy" style={{ objectPosition: position }} /><figcaption>{caption}</figcaption></figure>)
             : <figure><img src={asset('isp/waterfront-portrait.jpg')} alt="Sebastian standing beside the water in Lisbon" loading="lazy" /><figcaption>Lisbon, Portugal</figcaption></figure>}
         </div>
       </article>)}
@@ -34,7 +59,7 @@ export default function ExperiencesPage() {
       <h2 id="travel-journal-title">A few more memories.</h2>
       <p>I visited places I had only seen in pictures, but the experiences that lasted were the ones that helped me learn with and from other people.</p>
       <div className="journal-grid">
-        {journal.map(([file, alt, caption]) => <figure key={file}><img src={asset('isp/' + file)} alt={alt} loading="lazy" /><figcaption>{caption}</figcaption></figure>)}
+        {journal.map(({ file, alt, caption, position }) => <figure key={file}><img src={asset('isp/' + file)} alt={alt} loading="lazy" style={{ objectPosition: position }} /><figcaption>{caption}</figcaption></figure>)}
       </div>
     </section>
   </section>;
